@@ -166,6 +166,32 @@ elif submenu == "Jumlah Hari Hujan Berurutan Terpanjang":
     caption = "Peta Rata-Rata Jumlah Hari Hujan Berurutan Terpanjang Periode 1991-2020"
     tampilkan_gambar(file_path, caption)
 
+# Narasi/keterangan gambar
+with st.expander(":blue-background[Keterangan Gambar :]"):
+    st.caption("**Penjelasan/Definisi**")
+    st.caption("**1. Rata-rata Total Curah Hujan Tahunan (1991-2020) (mm/tahun):**")
+    st.caption("Rata-rata dari total curah hujan tahunan dari tahun 1991-2020. Sesuai ketentuan WMO dan BMKG, jumlah tahun yang ada (non-missing data) minimal 80% dari 30 tahun, yaitu 24 tahun")
+    st.caption("**2. Rata-rata Curah Hujan Bulanan (1991-2020) (mm/bulan):**")
+    st.caption("Rata-rata dari jumlah curah hujan bulanan (Januari sampai Desember) selama 30 tahun (1991-2020). Untuk setiap jumlah bulanan yang ada minimal 80% dari 30 tahun.")
+    st.caption("**3. Total Curah Hujan Tahunan Tertinggi (1991-2020) (mm/tahun):**")
+    st.caption("Total curah hujan tahunan tertinggi yang terjadi selama tahun 1991-2020 di setiap stasiun pengamatan.")
+    st.caption("**4. Curah Hujan Harian Maksimum Absolut (Rx1day) (mm/hari):**")
+    st.caption("Jumlah curah harian (24 jam) tertinggi yang terjadi di sebuah stasiun pengamatan selama tahun 1991-2020.")
+    st.caption("**5. Curah hujan harian Maksimum Absolut bulanan (mm/hari):**")
+    st.caption("Jumlah curah harian (24 jam) tertinggi yang terjadi di sebuah stasiun pengamatan pada masing-masing bulan selama tahun 1991-2020.")
+    st.caption("**6. Rata-rata Curah Hujan Harian Maksimum Tahunan (mm/hari):**")
+    st.caption("Rata-rata dari curah hujan harian (24 jam) tertinggi di sebuah stasiun pengamatan per tahun selama tahun 1991-2020.")
+    st.caption("**7. Rata-rata Jumlah Hari Hujan Bulanan (1991-2020) (hari/bulan):**")
+    st.caption("Rata-rata selama tahun 1991-2020 dari jumlah hari dalam sebulan di mana pada hari tersebut terjadi hujan. (kejadian hujan ditandai dengan pengukuran curah hujan minimal 1 mm).")
+    st.caption("**8. Rata-rata Jumlah Hari Hujan dengan Curah Hujan > 50 mm/hari (Tahunan):**")
+    st.caption("Rata-rata selama tahun 1991-2020 dari jumlah hari dalam satu tahun dimana pada hari tersebut terjadi hujan di atas 50 mm per hari.")
+    st.caption("**9. Rata-rata Jumlah Hari Hujan dengan Curah Hujan > 100 mm/hari (Tahunan):**")
+    st.caption("Rata-rata selama tahun 1991-2020 dari jumlah hari dalam satu tahun dimana pada hari tersebut terjadi hujan di atas 100 mm per hari.")
+    st.caption("**10. Jumlah Hari Tanpa Hujan Berurutan Terpanjang (Consecutive Dry Days):**")
+    st.caption("Jumlah hari terpanjang berturut-turut selama 30 tahun, dimana pada hari tersebut di stasiun pengamatan tidak terjadi hujan (hujan kurang dari 1 mm).")
+    st.caption("**11. Peta Jumlah Hari Hujan Berurutan Terpanjang (Consecutive Wet Days):**")
+    st.caption("Jumlah hari terpanjang berturut-turut selama 30 tahun, dimana pada hari tersebut di stasiun pengamatan terjadi hujan (hujan lebih besar sama dengan 1 mm).")
+    
 # membuat tabel
 st.subheader("📊 Statistik Klimatologi")
 
