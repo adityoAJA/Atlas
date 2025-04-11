@@ -75,6 +75,14 @@ elif submenu == "Lama Penyinaran Matahari Bulanan":
     caption = f"Peta Rata-Rata Lama Penyinaran Matahari Bulan {bulan_lpm} Periode 1991-2020"
     tampilkan_gambar(file_path, caption)
 
+# Narasi/keterangan gambar
+with st.expander(":blue-background[Keterangan Gambar :]"):
+    st.caption("**Penjelasan/Definisi**")
+    st.caption("**1. Peta Rata-rata Lama Penyinaran Matahari Tahunan (jam):**")
+    st.caption("Lama penyinaran matahari rata-rata tahunan adalah rata-rata dari lama penyinaran matahari  rata-rata harian selama satu tahun dari tahun 1991 hingga 2020. Dalam satu hari, lama penyinaran matahari yang digunakan adalah pengamatan mulai jam 08.00 hingga 16.00.")
+    st.caption("**2. Peta Rata-rata Lama Penyinaran Matahari Bulanan (jam):**")
+    st.caption("Lama penyinaran matahari bulanan adalah rata-rata dari lama penyinaran matahari harian selama satu bulan dari tahun 1991 - 2020.")
+
 # membuat tabel
 st.subheader("📊 Statistik Klimatologi")
 
