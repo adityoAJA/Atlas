@@ -42,5 +42,16 @@ Langkah install GIT di Windows:
 - gh release upload v1.0.0 peta.zip
 - Lalu akan dapat link_ID : url = "https://github.com/adityoAJA/Atlas/releases/download/v1.0.0/peta.zip"
 
+Deploy ke Server:
+Clone repo
+- git clone https://github.com/adityoAJA/Atlas.git
+- cd Atlas
+Buat Virtual Env
+- python3 -m venv env
+- source env/bin/activate
+Install dependencies
+- pip install -r requirements.txt
+Jalankan Skrip
+- streamlit run Pendahuluan.py
 
 
