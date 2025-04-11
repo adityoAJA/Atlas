@@ -90,18 +90,18 @@ elif submenu == "Jumlah Hari Kelembaban Udara >90 %":
 # Narasi/keterangan gambar
 with st.expander(":blue-background[Keterangan Gambar :]"):
     st.caption("**Penjelasan/Definisi**")
-    st.caption("**Kelembaban udara rata-rata Tahunan (1991-2020):**")
+    st.caption("**1. Kelembaban udara rata-rata Tahunan (1991-2020):**")
     st.caption("Kelembapan udara rata-rata tahunan adalah rata-rata dari kelembapan udara rata-rata harian selama satu tahun dari tahun 1991 hingga 2020.")
-    
-    st.caption("**Kelembaban udara rata-rata Bulanan (1991-2020):**")
+    st.caption("**2. Kelembaban udara rata-rata Bulanan (1991-2020):**")
     st.caption("Kelembaban udara rata-rata bulanan adalah rata-rata dari kelembapan rata-rata harian selama satu bulan dari tahun 1991 hingga 2020.")
     st.caption("*Kelembaban udara rata-rata harian = [(2 x RH07)+RH13+RH18]/4*")
     st.caption("*RH07 : kelembaban udara jam 07 waktu setempat*")
     st.caption("*RH13 : kelembaban udara jam 13 waktu setempat*")
     st.caption("*RH18 : kelembaban udara jam 18 waktu setempat*")
-
-    st.caption("**Peta Rata-rata Jumlah Hari Kelembaban Udara < 70%:**")
+    st.caption("**3. Peta Rata-rata Jumlah Hari Kelembaban Udara <970%:**")
     st.caption("Rata-rata jumlah hari dengan kelembapan udara <70% adalah jumlah hari kejadian kelembapan udara <70% dalam setahun yang dirata-ratakan selama tahun 1991 hingga 2020.")
+    st.caption("**4. Peta Rata-rata Jumlah Hari Kelembaban Udara >90%:**")
+    st.caption("Rata-rata jumlah hari dengan kelembapan udara >90% adalah Jumlah hari kejadian dengan kelembapan  udara >90%  dalam setahun yang dirata-ratakan selama tahun 1991 hingga 2020.")
     
 # membuat tabel
 st.subheader("📊 Statistik Klimatologi")
