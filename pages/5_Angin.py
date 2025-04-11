@@ -81,6 +81,16 @@ elif submenu == "Hari dengan Kecepataan Angin >25 Knots Bulanan":
     caption = f"Peta Jumlah Hari dengan Kecepatan Angin >25 Knots Bulan {bulan_angin} Periode 1991-2020"
     tampilkan_gambar(file_path, caption)
 
+# Narasi/keterangan gambar
+with st.expander(":blue-background[Keterangan Gambar :]"):
+    st.caption("**Penjelasan/Definisi**")
+    st.caption("**1. Kecepatan Angin Tertinggi (Knots):**")
+    st.caption("Kecepatan angin  tertinggi sepanjang tahun 1999 - 2020 (dalam knots).")
+    st.caption("**2. Rata-rata Jumlah hari dengan Kecepatan Angin > 25 Knots Tahunan:**")
+    st.caption("Rata-rata jumlah hari dengan kecepatan angin lebih besar dari 25 Knots pertahun sepanjang tahun 1999 - 2020. Sesuai dengan peraturan BMKG No. 9 tahun 2022 tentang Penyediaan dan Penyebarluasan Peringatan Dini Cuaca Ekstrem untuk variabel angin dikategorikan angin kencang saat kecepatan diatas 25 knot atau 45 km/jam.")
+    st.caption("**3. Jumlah Hari Terbanyak Dengan Kecepatan Angin >  25 Knots Bulanan:**")
+    st.caption("Jumlah hari terbanyak dengan kecepatan angin > 25 Knots dalam setiap bulan sepanjang tahun 1999 - 2020.")
+
 # membuat tabel
 st.subheader("📊 Statistik Klimatologi")
 
