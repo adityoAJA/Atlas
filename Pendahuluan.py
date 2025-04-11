@@ -11,7 +11,7 @@ st.set_page_config(
     )
 
 # Load custom CSS file
-with open('style.css') as f:
+with open('https://raw.githubusercontent.com/adityoAJA/Atlas/main/style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 ######################################################
