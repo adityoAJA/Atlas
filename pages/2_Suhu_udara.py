@@ -146,46 +146,46 @@ else:
 # membuat narasi dalam keterangan
 with st.expander(":blue-background[Keterangan Gambar :]"):
     st.caption("**Penjelasan/Definisi**")
-    st.caption(('''**Suhu udara rata-rata Tahunan (1991-2020) :**
+    st.caption(('''**1. Suhu udara rata-rata Tahunan (1991-2020) :**
                 Suhu udara rata-rata tahunan adalah rata-rata dari suhu udara  rata-rata harian selama satu tahun dari tahun 1991 hingga 2020.
                 '''))
-    st.caption(('''**Suhu udara rata-rata Bulanan (1991-2020) :**
+    st.caption(('''**2. Suhu udara rata-rata Bulanan (1991-2020) :**
                 Suhu udara rata-rata bulanan adalah rata-rata dari suhu rata-rata harian selama satu bulan dari tahun 1991 hingga 2020. Data suhu rata-rata harian diperoleh rumus sebagai berikut :
                 '''))
     st.caption(('''*Suhu rata-rata harian = [(2 x T07)+T13+T18]/4*'''))
     st.caption(('''*T07 : data pengamatan suhu udara yang diamati pada jam 07 waktu setempat*'''))
     st.caption(('''*T13 : data pengamatan suhu udara yang diamati pada jam 13 waktu setempat*'''))
     st.caption(('''*T18 : data pengamatan suhu udara yang diamati pada jam 18 waktu setempat*'''))
-    st.caption(('''**Suhu udara maksimum tahunan (1991-2020) :**
+    st.caption(('''**3. Suhu udara maksimum tahunan (1991-2020) :**
                 Suhu udara maksimum rata-rata tahunan adalah rata-rata suhu udara maksimum harian selama satu tahun dari tahun 1991 hingga 2020.
                 Pengukuran suhu udara maksimum harian dilakukan menggunakan termometer suhu udara maksimum pengamatan jam 18 waktu setempat.
                 '''))
-    st.caption(('''**Suhu udara maksimum bulanan (1991-2020) :**
+    st.caption(('''**4. Suhu udara maksimum bulanan (1991-2020) :**
                 Suhu udara maksimum rata-rata bulanan adalah rata-rata suhu udara maksimum harian selama satu bulan dari tahun 1991 hingga 2020.'''))
-    st.caption(('''**Suhu udara minimum tahunan (1991-2020) :**
+    st.caption(('''**5. Suhu udara minimum tahunan (1991-2020) :**
                 Suhu udara minimum rata-rata tahunan adalah rata-rata  suhu udara minimum harian selama satu tahun dari tahun 1991 hingga 2020.
                 Pengukuran suhu udara minimum harian dilakukan menggunakan termometer suhu udara minimum pengamatan jam 13 waktu setempat.
                 '''))
-    st.caption(('''**Suhu udara minimum bulanan (1991-2020) :**
+    st.caption(('''**6. Suhu udara minimum bulanan (1991-2020) :**
                 Suhu udara minimum rata-rata bulanan adalah rata-rata suhu udara minimum harian selama satu bulan dari tahun 1991 hingga 2020.'''))
-    st.caption(('''**Laju perubahan suhu udara rata-rata (°C/10 tahun) tahunan (1991-2020) :**
+    st.caption(('''**7. Laju perubahan suhu udara rata-rata (°C/10 tahun) tahunan (1991-2020) :**
                 Laju perubahan suhu udara rata-rata tahunan adalah kecenderungan atau tren perubahan suhu rata-rata tahunan dari tahun 1991 hingga 2020.
                 Contoh : 0.5°C/10 tahun artinya dalam kurun waktu 30 tahun dari tahun 1991 sampai 2020 terjadi perubahan suhu rata-rata sebesar 0.5°C selama 10 tahun.'''))
-    st.caption(('''**Laju perubahan suhu udara maksimum (°C/10 tahun) tahunan (1991-2020) :**
+    st.caption(('''**8. Laju perubahan suhu udara maksimum (°C/10 tahun) tahunan (1991-2020) :**
                 Laju perubahan suhu udara  maksimum tahunan adalah kecenderungan atau tren perubahan suhu udara maksimum tahunan dari tahun 1991 hingga 2020.
                 Contoh : 0.5°C/10 tahun artinya dalam kurun waktu 30 tahun dari tahun 1991 sampai 2020 terjadi perubahan suhu maksimum sebesar 0.5°C selama 10 tahun.'''))
-    st.caption(('''**Laju perubahan suhu udara minimum (°C/10 tahun) tahunan (1991-2020) :**
+    st.caption(('''**9. Laju perubahan suhu udara minimum (°C/10 tahun) tahunan (1991-2020) :**
                 Laju perubahan suhu udara minimum  tahunan adalah kecenderungan atau tren perubahan suhu udara  minimum  tahunan dari tahun 1991 hingga 2020.
                 Contoh : 0.5°C/10 tahun artinya dalam kurun waktu 30 tahun dari tahun 1991 sampai 2020 terjadi perubahan suhu minimum sebesar 0.5°C selama 10 tahun.'''))
-    st.caption(('''**Suhu Udara Maksimum Absolut Harian (1991-2020) :**
+    st.caption(('''**10. Suhu Udara Maksimum Absolut Harian (1991-2020) :**
                 Suhu udara maksimum absolut harian adalah suhu udara maksimum harian tertinggi selama periode tahun 1991 hingga 2020.'''))
-    st.caption(('''**Suhu Udara Minimum Absolut Harian (1991-2020) :**
+    st.caption(('''**11. Suhu Udara Minimum Absolut Harian (1991-2020) :**
                 Suhu udara minimum absolut harian adalah suhu udara minimum harian tertinggi selama periode tahun 1991 hingga 2020.'''))
-    st.caption(('''**Selisih Suhu Udara maksimum dengan Suhu Udara Minimum (DTR) (1991-2020) :**
+    st.caption(('''**12. Selisih Suhu Udara maksimum dengan Suhu Udara Minimum (DTR) (1991-2020) :**
                 Selisih suhu udara maksimum dengan suhu udara minimum adalah rata-rata suhu udara maksimum dikurangi suhu udara minimum dari tahun 1991 hingga 2020.'''))
-    st.caption(('''**Rata-rata Jumlah Hari dengan Suhu Udara Maksimum > 35°C :**
+    st.caption(('''**13. Rata-rata Jumlah Hari dengan Suhu Udara Maksimum > 35°C :**
                 Rata-rata jumlah Hari dengan Suhu Udara Maksimum > 35°C adalah Jumlah hari kejadian suhu udara maksimum  > 35°C dalam setahun yang dirata-ratakan selama tahun 1991 hingga 2020.'''))
-    st.caption(('''**Rata-rata Jumlah Hari Suhu Udara Minimum < 15°C :**
+    st.caption(('''**14. Rata-rata Jumlah Hari Suhu Udara Minimum < 15°C :**
                 Rata-rata jumlah Hari Suhu Udara Minimum < 15°C adalah Jumlah hari kejadian suhu udara Minimum < 15°C dalam setahun yang dirata-ratakan selama tahun 1991 hingga 2020.'''))
     
 # membuat tabel
