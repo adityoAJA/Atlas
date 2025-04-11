@@ -2,6 +2,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+from st_aggrid import AgGrid
 import requests
 import io
 from io import BytesIO
@@ -132,7 +133,7 @@ st.header('1. Data')
 # narasi section 2.a
 st.markdown('''
             <div class="justified-text">
-Data pengamatan merupakan bahan dasar dari serangkaian kegiatan pengolahan sampai analisis. Data adalah sekeping fakta
+            Data pengamatan merupakan bahan dasar dari serangkaian kegiatan pengolahan sampai analisis. Data adalah sekeping fakta
             atau informasi yang menampilkan nilai tertentu, misalkan suhu udara, jumlah curah hujan dan lain-lain.
             Pada umumnya data cuaca dan iklim diamati menggunakan peralatan yang standard dan setiap jenis data cuaca
             dan iklim mempunyai satuan terkecil yang berbeda-beda. Berikut dijelaskan definisi data cuaca dan iklim.
