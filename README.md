@@ -42,7 +42,7 @@ Langkah install GIT di Windows:
 - gh release upload v1.0.0 peta.zip
 - Lalu akan dapat link_ID : url = "https://github.com/adityoAJA/Atlas/releases/download/v1.0.0/peta.zip"
 
-Deploy ke Server:
+Deploy ke Server: (cek git --> git --version) (kalau belum ada --> sudo apt install git)
 Clone repo
 - git clone https://github.com/adityoAJA/Atlas.git
 - cd Atlas
