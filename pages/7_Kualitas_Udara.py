@@ -96,6 +96,21 @@ elif submenu == "SPM Minimum":
     caption = "Peta Suspended Particulate Matters (SPM) Minimum Tahunan Periode 1991-2020"
     tampilkan_gambar(file_path, caption)
 
+# Narasi/keterangan gambar
+with st.expander(":blue-background[Keterangan Gambar :]"):
+    st.caption("**Penjelasan/Definisi**")
+    st.caption("**1. pH Air Hujan rata-rata Tahunan:**")
+    st.caption("pH Air Hujan rata-rata Tahunan adalah rata-rata dari pH air hujan mingguan selama satu tahun dari 2011 - 2020.")
+    st.caption("**2. pH Air Hujan rata-rata Bulanan:**")
+    st.caption("pH Air Hujan rata-rata Bulanan adalah rata-rata dari pH air hujan mingguan selama satu bulan dari 2011 - 2020.")
+    st.caption("Sampling air hujan dilakukan setiap hari Senin pukul 09:00 waktu setempat menggunakan peralatan ARWS (Automatic Rain Water Sampler). Selanjutnya air hujan yang terkumpul dianalisis nilai pH (derajat keasaman) menggunakan elektroda pH meter. Nilai pH dihitung berdasarkan logaritma konsentrasi ion asam pada air hujan dan jumlah curah hujan selama 1 pekan.")
+    st.caption("**3. Suspended Particulate Matters (SPM) rata-rata Tahunan:**")
+    st.caption("SPM rata-rata Tahunan adalah rata-rata dari konsentrasi SPM 6 harian selama satu tahun dari 2011 - 2020. Sampling SPM dilakukan menggunakan HVAS (High Volume Air Sampler) dalam kurun waktu 24 jam selama 6 hari sekali. SPM dianalisis secara gravimetri menggunakan neraca analitik.")
+    st.caption("**4. SPM maksimum Tahunan:**")
+    st.caption("SPM maksimum Tahunan adalah konsentrasi SPM 6 harian maksimum selama satu tahun dari 2011 - 2020.")
+    st.caption("**5. SPM minimum Tahunan:**")
+    st.caption("SPM minimum Tahunan adalah konsentrasi SPM 6 harian minimum selama satu tahun dari 2011 - 2020.")
+
 # membuat tabel
 st.subheader("📊 Statistik Klimatologi")
 
