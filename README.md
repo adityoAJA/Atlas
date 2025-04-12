@@ -58,19 +58,21 @@ Jalankan Git Pull (auto update) --> trigger
 - screen -S streamlit-atlas (jalankan app streamlit di lokal, setelah clone menggunakan screen)
 - cd /path/ke/folder/Atlas (sesuaikan path lokal)
 - streamlit run app.py (jalankan pada screen)
-- Buat Skrip Auto Pull + Restart :
+- Buat Skrip Auto Pull + Restart:
+  
 #!/bin/bash
-# Path ke repo lokal kamu
+#Path ke repo lokal kamu
 REPO_DIR="/path/ke/folder/Atlas"
-# Masuk ke folder repo
+#Masuk ke folder repo
 cd "$REPO_DIR" || exit
-# Tarik update dari GitHub
+#Tarik update dari GitHub
 echo "Melakukan git pull pada $(date)" >> pull_log.txt
 git pull origin main >> pull_log.txt 2>&1
-# Hentikan streamlit di dalam screen (kalau ada)
+#Hentikan streamlit di dalam screen (kalau ada)
 screen -S streamlit-atlas -X quit
-# Jalankan ulang streamlit dalam screen
+#Jalankan ulang streamlit dalam screen
 screen -dmS streamlit-atlas bash -c "cd $REPO_DIR && streamlit run app.py"
+
 - /home/username/scripts/auto_pull.sh (simpan sebagai sh --> sesuaikan nama dan path)
 - chmod +x /home/username/scripts/auto_pull.sh (jalankan atau run kode.sh)
 - crontab -e
