@@ -1,4 +1,4 @@
-ini adalah project membuat atlas iklim interaktif dengan streamlit
+ini adalah project membuat atlas iklim interaktif dengan streamlit bmkg
 
 catatan:
 Menambahkan atau mengupdate data yang besar dan banyak (jadikan zip) lalu upload ke release, dengan cara sbb:
