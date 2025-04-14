@@ -1,4 +1,4 @@
-# import library tess
+# import library
 import streamlit as st
 
 # Setting layout halaman
