@@ -37,8 +37,8 @@ with st.spinner("Sedang mengunduh dan mengekstrak data peta..."):
     folder_path = download_and_extract_zip()
 
 # Sidebar Submenu
-with st.sidebar:
-    submenu = st.selectbox("Parameter Kelembaban Udara", (
+# with st.sidebar:
+    submenu = st.selectbox("🌏 Pilih Gambar:", (
         "Kelembaban Udara Rata-Rata Bulanan",
         "Kelembaban Udara Rata-Rata Tahunan",
         "Jumlah Hari Kelembaban Udara <70 %",
@@ -102,7 +102,7 @@ with st.expander(":blue-background[Keterangan Gambar :]"):
     st.caption("Rata-rata jumlah hari dengan kelembapan udara <70% adalah jumlah hari kejadian kelembapan udara <70% dalam setahun yang dirata-ratakan selama tahun 1991 hingga 2020.")
     st.caption("**4. Peta Rata-rata Jumlah Hari Kelembaban Udara >90%:**")
     st.caption("Rata-rata jumlah hari dengan kelembapan udara >90% adalah Jumlah hari kejadian dengan kelembapan  udara >90%  dalam setahun yang dirata-ratakan selama tahun 1991 hingga 2020.")
-    
+
 # membuat tabel
 st.subheader("📊 Statistik Klimatologi")
 
