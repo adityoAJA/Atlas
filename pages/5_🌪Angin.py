@@ -37,8 +37,8 @@ with st.spinner("Sedang mengunduh dan mengekstrak data peta..."):
     folder_path = download_and_extract_zip()
 
 # Sidebar submenu
-with st.sidebar:
-    submenu = st.selectbox("Parameter Angin", (
+# with st.sidebar:
+    submenu = st.selectbox("🌏 Pilih Gambar:", (
         "Kecepatan Angin Tertinggi",
         "Hari dengan Kecepataan Angin >25 Knots Tahunan",
         "Hari dengan Kecepataan Angin >25 Knots Bulanan"
