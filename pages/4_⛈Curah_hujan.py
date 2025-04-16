@@ -38,8 +38,8 @@ st.title('Atlas Curah Hujan')
 st.divider()
 
 # === Sidebar Menu ===
-with st.sidebar:
-    submenu = st.selectbox("Parameter Curah Hujan", (
+# with st.sidebar:
+submenu = st.selectbox("🌏 Pilih Gambar:", (
         "Curah Hujan Tahunan",
         "Curah Hujan Bulanan",
         "Curah Hujan Tahunan Tertinggi",
