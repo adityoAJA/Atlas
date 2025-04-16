@@ -37,17 +37,16 @@ with st.spinner("Sedang mengunduh dan mengekstrak data peta..."):
     folder_path = download_and_extract_zip()
 
 # Sidebar
-with st.sidebar:
+# with st.sidebar:
     submenu = st.selectbox(
-        "Parameter Kualitas Udara",
+        "🌏 Pilih Gambar:",
         (
             "pH Air Hujan Tahunan",
             "pH Air Hujan Bulanan",
             "Rata-Rata SPM",
             "SPM Maksimum",
             "SPM Minimum"
-        )
-    )
+        ))
 
 # Dictionary bulan dan path peta
 ph_dict = {
