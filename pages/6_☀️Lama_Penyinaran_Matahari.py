@@ -37,9 +37,9 @@ with st.spinner("Sedang mengunduh dan mengekstrak data peta..."):
     folder_path = download_and_extract_zip()
 
 # Sidebar submenu
-with st.sidebar:
+# with st.sidebar:
     submenu = st.selectbox(
-        "Parameter Lama Penyinaran Matahari",
+        "🌏 Pilih Gambar:",
         ("Lama Penyinaran Matahari Tahunan", "Lama Penyinaran Matahari Bulanan")
     )
 
