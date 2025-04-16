@@ -35,8 +35,8 @@ st.title("Atlas Suhu Udara")
 st.divider()
 
 # === Sidebar Menu ===
-with st.sidebar:
-    submenu = st.selectbox("Parameter Suhu Udara", (
+# with st.sidebar:
+submenu = st.selectbox("🌏 Pilih Gambar:", (
         "Suhu Udara Rata-Rata Bulanan",
         "Suhu Udara Rata-Rata Tahunan",
         "Suhu Udara Maksimum Bulanan",
@@ -187,7 +187,7 @@ with st.expander(":blue-background[Keterangan Gambar :]"):
                 Rata-rata jumlah Hari dengan Suhu Udara Maksimum > 35°C adalah Jumlah hari kejadian suhu udara maksimum  > 35°C dalam setahun yang dirata-ratakan selama tahun 1991 hingga 2020.'''))
     st.caption(('''**14. Rata-rata Jumlah Hari Suhu Udara Minimum < 15°C :**
                 Rata-rata jumlah Hari Suhu Udara Minimum < 15°C adalah Jumlah hari kejadian suhu udara Minimum < 15°C dalam setahun yang dirata-ratakan selama tahun 1991 hingga 2020.'''))
-    
+
 # membuat tabel
 st.subheader("📊 Statistik Klimatologi")
 
