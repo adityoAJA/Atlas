@@ -44,12 +44,6 @@ st.warning('''
            Tempor orci eu lobortis elementum nibh tellus molestie nunc. Ultricies mi eget mauris pharetra et ultrices neque ornare. Odio eu feugiat pretium nibh ipsum.
            Vulputate dignissim suspendisse in est ante in nibh mauris. Rutrum quisque non tellus orci ac auctor. Ultrices dui sapien eget mi. Volutpat diam ut venenatis tellus in.
            Congue nisi vitae suscipit tellus mauris a. Elementum sagittis vitae et leo.
-
-           Sit amet nisl suscipit adipiscing bibendum est ultricies integer quis. Praesent elementum facilisis leo vel fringilla est ullamcorper eget nulla.
-           Elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere. Sapien et ligula ullamcorper malesuada proin. Feugiat nibh sed pulvinar proin gravida hendrerit lectus.
-           Eget egestas purus viverra accumsan in nisl nisi. Libero id faucibus nisl tincidunt eget nullam non nisi. Arcu odio ut sem nulla pharetra diam sit amet nisl. Mollis nunc sed id semper risus.
-           Quam elementum pulvinar etiam non quam lacus suspendisse faucibus interdum. Ac odio tempor orci dapibus. In hac habitasse platea dictumst vestibulum rhoncus est. Sit amet dictum sit amet justo donec enim.
-           Accumsan tortor posuere ac ut. Id aliquet risus feugiat in ante. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Etiam tempor orci eu lobortis elementum nibh tellus.
 ''')
 
 st.header('Daftar Pustaka')
