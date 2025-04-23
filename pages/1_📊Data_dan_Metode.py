@@ -300,27 +300,27 @@ with col2:
     Data yang digunakan terdiri dari data pengamatan in-situ.
     </div>''', unsafe_allow_html=True)
 
-# judul section 2.b
-st.header('2. Metode')
+# # judul section 2.b
+# st.header('2. Metode')
 
-# narasi section 2.b
-st.markdown('''<div class="justified-text">
-Quisque egestas diam in arcu cursus euismod quis. A pellentesque sit amet porttitor eget dolor. Euismod in pellentesque massa placerat duis ultricies. In ante metus dictum at tempor commodo ullamcorper a lacus. Sit amet nisl purus in mollis nunc sed id semper. Adipiscing elit pellentesque habitant morbi. Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vestibulum lectus mauris ultrices eros in. Pellentesque elit eget gravida cum sociis natoque. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor. Id venenatis a condimentum vitae. Nec ultrices dui sapien eget mi proin sed libero enim. Tellus at urna condimentum mattis pellentesque. Non sodales neque sodales ut etiam sit. Ut aliquam purus sit amet. Volutpat diam ut venenatis tellus in metus vulputate.
-</div>''', unsafe_allow_html=True)
+# # narasi section 2.b
+# st.markdown('''<div class="justified-text">
+# Quisque egestas diam in arcu cursus euismod quis. A pellentesque sit amet porttitor eget dolor. Euismod in pellentesque massa placerat duis ultricies. In ante metus dictum at tempor commodo ullamcorper a lacus. Sit amet nisl purus in mollis nunc sed id semper. Adipiscing elit pellentesque habitant morbi. Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vestibulum lectus mauris ultrices eros in. Pellentesque elit eget gravida cum sociis natoque. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor. Id venenatis a condimentum vitae. Nec ultrices dui sapien eget mi proin sed libero enim. Tellus at urna condimentum mattis pellentesque. Non sodales neque sodales ut etiam sit. Ut aliquam purus sit amet. Volutpat diam ut venenatis tellus in metus vulputate.
+# </div>''', unsafe_allow_html=True)
 
-# penulisan rumus / algoritma
-st.latex(r'''
-    a r^{n-1} =
-    a \left(\frac{1-r^{n}}{1-r}\right)
-    ''')
+# # penulisan rumus / algoritma
+# st.latex(r'''
+#     a r^{n-1} =
+#     a \left(\frac{1-r^{n}}{1-r}\right)
+#     ''')
 
-# narasi lanjutan section 2.b
-st.markdown('''<div class="justified-text">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer vitae justo eget magna fermentum iaculis eu non. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. In nulla posuere sollicitudin aliquam ultrices sagittis. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper. Eget felis eget nunc lobortis mattis aliquam faucibus purus. Placerat in egestas erat imperdiet sed euismod nisi porta. Dictum at tempor commodo ullamcorper. Malesuada pellentesque elit eget gravida cum. Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula.
-</div>''', unsafe_allow_html=True)
+# # narasi lanjutan section 2.b
+# st.markdown('''<div class="justified-text">
+# Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer vitae justo eget magna fermentum iaculis eu non. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. In nulla posuere sollicitudin aliquam ultrices sagittis. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper. Eget felis eget nunc lobortis mattis aliquam faucibus purus. Placerat in egestas erat imperdiet sed euismod nisi porta. Dictum at tempor commodo ullamcorper. Malesuada pellentesque elit eget gravida cum. Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula.
+# </div>''', unsafe_allow_html=True)
 
 # judul section 2.c
-st.header('3. Quality Control')
+st.header('2. Quality Control')
 
 # narasi section 2.c
 st.markdown('''<div class="justified-text">
