@@ -107,7 +107,7 @@ with st.expander(":blue-background[Keterangan Gambar :]"):
 st.subheader("📊 Statistik Klimatologi")
 
 # Link ke file Excel dari repo kamu
-url = "https://raw.githubusercontent.com/adityoAJA/Atlas/main/Data_ready.xlsx"
+url = "https://raw.githubusercontent.com/adityoAJA/Atlas/main/Data_ready_new.xlsx"
 
 # Download file dan load ke pandas
 response = requests.get(url)
