@@ -20,7 +20,7 @@ st.title('Penutup')
 st.divider()
 
 # judul section
-st.header('1. Kesimpulan')
+st.header('Kesimpulan')
 
 # narasi utama
 st.markdown('''
@@ -33,7 +33,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 ''', unsafe_allow_html=True)
 
 # judul section 1
-st.header('2. Saran')
+st.header('Saran')
 
 # narasi pendahuluan
 st.warning('''
