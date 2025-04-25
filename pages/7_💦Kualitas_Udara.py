@@ -199,7 +199,7 @@ try:
 
         st.plotly_chart(fig, use_container_width=True)
     else:
-        st.write("Tidak bisa menampilkan grafik selain parameter Bulanan")
+        st.info("Tidak bisa menampilkan grafik selain parameter Bulanan")
         
 except Exception as e:
     st.warning(f"Gagal membuat grafik: {e}")
