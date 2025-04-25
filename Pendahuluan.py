@@ -25,6 +25,8 @@ st.markdown('''
 
 ''')
 
+st.divider()
+
 # judul section
 st.header('Overview')
 
