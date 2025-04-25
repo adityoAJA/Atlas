@@ -123,12 +123,12 @@ sheets = {
     }
 
 # judul section 2
-st.title('Data dan Metode')
+st.title('Data dan Quality Control')
 
 st.divider()
 
 # judul section 2.a
-st.header('1. Data')
+st.header('Data')
 
 # narasi section 2.a
 st.markdown('''
@@ -320,7 +320,7 @@ with col2:
 # </div>''', unsafe_allow_html=True)
 
 # judul section 2.c
-st.header('2. Quality Control')
+st.header('Quality Control')
 
 # narasi section 2.c
 st.markdown('''<div class="justified-text">
