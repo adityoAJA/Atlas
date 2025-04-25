@@ -88,7 +88,7 @@ fig.update_layout(
 )
 
 # Link ke file Excel dari repo kamu
-url1 = "https://raw.githubusercontent.com/adityoAJA/Atlas/main/Data_ready.xlsx"
+url1 = "https://raw.githubusercontent.com/adityoAJA/Atlas/main/Data_ready_new.xlsx"
 
 # Download file dan load ke pandas
 response1 = requests.get(url1)
