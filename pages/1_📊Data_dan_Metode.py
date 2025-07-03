@@ -232,38 +232,76 @@ st.markdown(''' ''')
 # Tampilkan plot di Streamlit
 st.plotly_chart(fig, use_container_width=True)
 
+# # Dropdown untuk pilih data
+# selected_name = st.selectbox("📂 Pilih Dataset:", list(sheets.keys()))
+# df_tabel = sheets[selected_name]
+
 # # judul tabel
-# st.caption(f"**Tabel 1.** Data Stasiun {df1['Nama Stasiun'][0]}.")
+# if selected_name == 'Metadata Stasiun Meteorologi Klimatologi dan Geofisika':
+#         st.caption(f"**Tabel.** {selected_name}")
+# else :
+#      st.caption(f"**Tabel.** {selected_name} Periode Tahun 1991-2020")   
+
+# # Menampilkan DataFrame yang dipilih menggunakan AgGrid
+# formatted_data = df_tabel.copy()
+
+# # Ubah kolom pertama jadi string
+# first_col = formatted_data.columns[0]
+# formatted_data[first_col] = formatted_data[first_col].astype(str)
+
+# # Reset index supaya kolom index (label paling kiri) hilang
+# formatted_data = formatted_data.reset_index(drop=True)
+
+# # Format semua kolom numerik (kecuali kolom pertama)
+# numeric_cols = formatted_data.select_dtypes(include='number').columns
+# numeric_format = {col: '{:.2f}' for col in numeric_cols}
+
+# # Terapkan style
+# styled_df = formatted_data.style.format(numeric_format)
+
+# # Tampilkan di Streamlit
+# st.dataframe(styled_df, hide_index=True)
 
 # Dropdown untuk pilih data
 selected_name = st.selectbox("📂 Pilih Dataset:", list(sheets.keys()))
 df_tabel = sheets[selected_name]
 
-# judul tabel
+# Judul tabel
 if selected_name == 'Metadata Stasiun Meteorologi Klimatologi dan Geofisika':
-        st.caption(f"**Tabel.** {selected_name}")
-else :
-     st.caption(f"**Tabel.** {selected_name} Periode Tahun 1991-2020")   
+    st.caption(f"**Tabel.** {selected_name}")
+else:
+    st.caption(f"**Tabel.** {selected_name} Periode Tahun 1991-2020")
 
-# Menampilkan DataFrame yang dipilih menggunakan AgGrid
+# Salin data
 formatted_data = df_tabel.copy()
 
 # Ubah kolom pertama jadi string
 first_col = formatted_data.columns[0]
 formatted_data[first_col] = formatted_data[first_col].astype(str)
 
-# Reset index supaya kolom index (label paling kiri) hilang
+# Reset index agar kolom index hilang
 formatted_data = formatted_data.reset_index(drop=True)
 
-# Format semua kolom numerik (kecuali kolom pertama)
-numeric_cols = formatted_data.select_dtypes(include='number').columns
-numeric_format = {col: '{:.2f}' for col in numeric_cols}
+# ========== PENANGANAN KHUSUS ==========
+if selected_name == 'Metadata Stasiun Meteorologi Klimatologi dan Geofisika':
+    # Format kolom terakhir (Ketinggian) jadi bilangan bulat
+    last_col = formatted_data.columns[-1]
+    formatted_data[last_col] = formatted_data[last_col].astype(int)
+    # Tampilkan di Streamlit tanpa index
+    st.dataframe(formatted_data, hide_index=True)
 
-# Terapkan style
-styled_df = formatted_data.style.format(numeric_format)
+else:
+    # Hapus kolom lat/lon jika ada
+    cols_to_drop = [col for col in formatted_data.columns if any(key in col.lower() for key in ['lintang', 'bujur', 'latitude', 'longitude'])]
+    formatted_data = formatted_data.drop(columns=cols_to_drop, errors='ignore')
 
-# Tampilkan di Streamlit
-st.dataframe(styled_df, hide_index=True)
+    # Format kolom numerik ke 2 angka di belakang koma
+    numeric_cols = formatted_data.select_dtypes(include='number').columns
+    for col in numeric_cols:
+        formatted_data[col] = formatted_data[col].map("{:.2f}".format)
+
+    # Tampilkan di Streamlit tanpa index
+    st.dataframe(formatted_data, hide_index=True)
 
 # narasi section 2.a
 st.markdown('''<div class="justified-text">
