@@ -240,7 +240,10 @@ selected_name = st.selectbox("📂 Pilih Dataset:", list(sheets.keys()))
 df_tabel = sheets[selected_name]
 
 # judul tabel
-st.caption(f"**Tabel.** {selected_name} Periode Tahun 1991-2020")
+if selected_name == 'Metadata Stasiun Meteorologi Klimatologi dan Geofisika':
+        st.caption(f"**Tabel.** {selected_name}")
+else :
+     st.caption(f"**Tabel.** {selected_name} Periode Tahun 1991-2020")   
 
 # Menampilkan DataFrame yang dipilih menggunakan AgGrid
 formatted_data = df_tabel.copy()
