@@ -96,7 +96,8 @@ xls1 = pd.ExcelFile(BytesIO(response1.content))
 
 # sheet
 sheets = {
-    "Rata-Rata Total Curah Hujan Bulanan": xls1.parse('CH_bln'),
+    'Metadata Stasiun Meteorologi Klimatologi dan Geofisika': xls1.parse('Metadata'),
+    'Rata-Rata Total Curah Hujan Bulanan': xls1.parse('CH_bln'),
     'Curah Hujan Harian Maksimum Absolut Bulanan': xls1.parse('RX1day_bln'),
     'Rata-Rata Jumlah Hari Hujan Bulanan': xls1.parse('HH_bln'),
     'Suhu Udara Rata-Rata Bulanan': xls1.parse('Trata_bln'),
