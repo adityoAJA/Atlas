@@ -259,7 +259,7 @@ numeric_format = {col: '{:.2f}' for col in numeric_cols}
 styled_df = formatted_data.style.format(numeric_format)
 
 # Tampilkan di Streamlit
-st.dataframe(styled_df)
+st.dataframe(styled_df, hide_index=True)
 
 # narasi section 2.a
 st.markdown('''<div class="justified-text">
