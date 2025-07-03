@@ -292,7 +292,7 @@ if selected_name == 'Metadata Stasiun Meteorologi Klimatologi dan Geofisika':
 
 else:
     # Hapus kolom lat/lon jika ada
-    cols_to_drop = [col for col in formatted_data.columns if any(key in col.lower() for key in ['lintang', 'bujur', 'latitude', 'longitude'])]
+    cols_to_drop = [col for col in formatted_data.columns if any(key in col.lower() for key in ['Lat','Lon','lat','lon','lintang', 'bujur', 'latitude', 'longitude'])]
     formatted_data = formatted_data.drop(columns=cols_to_drop, errors='ignore')
 
     # Format kolom numerik ke 2 angka di belakang koma
