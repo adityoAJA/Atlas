@@ -239,7 +239,7 @@ selected_name = st.selectbox("📂 Pilih Dataset:", list(sheets.keys()))
 df_tabel = sheets[selected_name]
 
 # judul tabel
-st.caption(f"**Tabel 1.** Data {selected_name} Periode Tahun 1991-2020 di Indonesia.")
+st.caption(f"**Tabel.** Data {selected_name} Periode Tahun 1991-2020 di Indonesia.")
 
 # Menampilkan DataFrame yang dipilih menggunakan AgGrid
 formatted_data = df_tabel.copy()
