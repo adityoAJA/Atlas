@@ -298,7 +298,7 @@ else:
     # Format kolom numerik ke 2 angka di belakang koma
     numeric_cols = formatted_data.select_dtypes(include='number').columns
     for col in numeric_cols:
-        formatted_data[col] = formatted_data[col].map("{:.2f}".format)
+        formatted_data[col] = formatted_data[col].map("{:.f}".format)
 
     # Tampilkan di Streamlit tanpa index
     st.dataframe(formatted_data, hide_index=True)
