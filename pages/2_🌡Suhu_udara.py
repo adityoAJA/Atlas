@@ -102,17 +102,17 @@ elif submenu == "Suhu Udara Minimum Tahunan":
     st.image(file_path, caption, use_container_width=True)
 
 elif submenu == "Laju Perubahan Suhu Udara Rata-Rata Tahunan":
-    file_path = os.path.join(folder_path, "Trend_trata.png")
+    file_path = os.path.join(folder_path, "Tren_trata.png")
     caption = "Peta Laju Perubahan Suhu Udara Rata-Rata Tahunan Periode 1991-2020"
     st.image(file_path, caption, use_container_width=True)
 
 elif submenu == "Laju Perubahan Suhu Udara Maksimum Tahunan":
-    file_path = os.path.join(folder_path, "Trend_tmax.png")
+    file_path = os.path.join(folder_path, "Tren_tmax.png")
     caption = "Peta Laju Perubahan Suhu Udara Maksimum Tahunan Periode 1991-2020"
     st.image(file_path, caption, use_container_width=True)
 
 elif submenu == "Laju Perubahan Suhu Udara Minimum Tahunan":
-    file_path = os.path.join(folder_path, "Trend_tmin.png")
+    file_path = os.path.join(folder_path, "Tren_tmin.png")
     caption = "Peta Laju Perubahan Suhu Udara Minimum Tahunan Periode 1991-2020"
     st.image(file_path, caption, use_container_width=True)
 
