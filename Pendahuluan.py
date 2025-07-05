@@ -38,7 +38,7 @@ Atlas Iklim Indonesia adalah alat interaktif (interactive tools) bagi masyarakat
 ''')
 
 # atribut tambahan
-st.markdown('**Keywords:** *Iklim*, *Atlas*, *Indonesia*, *Parameter*')
+st.markdown('**Keywords:** *Iklim*, *Atlas*, *Indonesia*')
 
 # judul section 1
 st.header('Latar Belakang')
