@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "pendahuluan.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "pendahuluan.py"
+    }
+  ]
+}
