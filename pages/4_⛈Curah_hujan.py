@@ -96,7 +96,7 @@ elif submenu == "Curah Hujan Harian Maksimum Tahunan":
 
 elif submenu == "Curah Hujan Harian Maksimum Absolut":
     file_path = os.path.join(folder_path, "RX1dmax.png")
-    caption = "Peta Rata-Rata Curah Hujan Harian Maksimum Absolut Periode 1991-2020"
+    caption = "Peta Curah Hujan Harian Maksimum Absolut Periode 1991-2020"
     tampilkan_gambar(file_path, caption)
 
 elif submenu == "Curah Hujan Harian Maksimum Absolut Bulanan":
@@ -117,7 +117,7 @@ elif submenu == "Curah Hujan Harian Maksimum Absolut Bulanan":
     }
     bulan_abs = st.selectbox("Pilih Bulan", list(abs_dict.keys()))
     file_path = os.path.join(folder_path, abs_dict[bulan_abs])
-    caption = f"Peta Rata-Rata Curah Hujan Harian Maksimum Absolut Bulan {bulan_abs} Periode 1991-2020"
+    caption = f"Peta Curah Hujan Harian Maksimum Absolut Bulan {bulan_abs} Periode 1991-2020"
     tampilkan_gambar(file_path, caption)
 
 elif submenu == "Jumlah Hari Hujan Tahunan":
