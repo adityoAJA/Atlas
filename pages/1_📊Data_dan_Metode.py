@@ -97,30 +97,30 @@ xls1 = pd.ExcelFile(BytesIO(response1.content))
 # sheet
 sheets = {
     'Metadata Stasiun Meteorologi Klimatologi dan Geofisika': xls1.parse('Metadata'),
+    'Suhu Udara Rata-Rata Tahunan': xls1.parse('Suhu_thn'),
+    'Suhu Udara Rata-Rata Bulanan': xls1.parse('Trata_bln'),
+    'Suhu Udara Minimum Rata-Rata Tahunan': xls1.parse('Tmin_abs_thn'),
+    'Suhu Udara Minimum Rata-Rata Bulanan': xls1.parse('Tmin_bln'),
+    'Suhu Udara Maksimum Rata-Rata Tahunan': xls1.parse('Tmax_abs_thn'),
+    'Suhu Udara Maksimum Rata-Rata Bulanan': xls1.parse('Tmax_bln'),
+    'Kelembapan Udara Rata-Rata Tahunan': xls1.parse('RH_thn'),
+    'Kelembapan Udara Rata-Rata Bulanan': xls1.parse('RH_bln'),
+    'Rata-Rata Jumlah Hari dengan Kelembapan Udara >90 % Tahunan': xls1.parse('RH_90_thn'),
+    'Rata-Rata Jumlah Hari dengan Kelembapan Udara <70 % Tahunan': xls1.parse('RH_70_thn'),
     'Rata-Rata Total Curah Hujan Bulanan': xls1.parse('CH_bln'),
+    'Rata-Rata Total Curah Hujan Tahunan': xls1.parse('CH_thn'),
     'Curah Hujan Harian Maksimum Absolut Bulanan': xls1.parse('RX1day_bln'),
     'Rata-Rata Jumlah Hari Hujan Bulanan': xls1.parse('HH_bln'),
-    'Suhu Udara Rata-Rata Bulanan': xls1.parse('Trata_bln'),
-    'Suhu Udara Minimum Rata-Rata Bulanan': xls1.parse('Tmin_bln'),
-    'Suhu Udara Maksimum Rata-Rata Bulanan': xls1.parse('Tmax_bln'),
-    'Kelembapan Udara Rata-Rata Bulanan': xls1.parse('RH_bln'),
-    'Rata-Rata Jumlah Hari dengan Kecepatan Angin >25 Knot Bulanan': xls1.parse('Wind_25_bln'),
-    'Rata-Rata PH Air Hujan Bulanan': xls1.parse('ph_bln'),
+    'Kecepatan Angin Tertinggi dan Rata-Rata Jumlah Hari dengan Kecepatan Angin >25 Knot Tahunan': xls1.parse('Wind_25_thn'),
+    'Jumlah Hari dengan Kecepatan Angin >25 Knot Bulanan': xls1.parse('Wind_25_bln'),
+    'Rata-Rata Lama Penyinaran Matahari (jam) Tahunan': xls1.parse('LPM_thn'),
     'Rata-Rata Lama Penyinaran Matahari (jam) Bulanan': xls1.parse('LPM_bln'),
-    'Rata-Rata Total Curah Hujan Tahunan': xls1.parse('CH_thn'),
-    'Suhu Udara Rata-Rata Tahunan': xls1.parse('Suhu_thn'),
-    'Suhu Udara Maksimum Rata-Rata Tahunan': xls1.parse('Tmax_abs_thn'),
-    'Suhu Udara Minimum Rata-Rata Tahunan': xls1.parse('Tmin_abs_thn'),
+    'Rata-Rata PH Air Hujan Tahunan': xls1.parse('ph_thn'),
+    'Rata-Rata PH Air Hujan Bulanan': xls1.parse('ph_bln'),
+    'Suspended Particulate Matters (SPM) Tahunan': xls1.parse('SPM_thn'),
     'Laju Perubahan Suhu Udara Maksimum Tahunan': xls1.parse('trend_tmax_thn'),
     'Laju Perubahan Suhu Udara Minimum Tahunan': xls1.parse('trend_tmin_thn'),
     'Laju Perubahan Suhu Udara Rata-Rata Tahunan': xls1.parse('trend_trata_thn'),
-    'Kelembapan Udara Rata-Rata Tahunan': xls1.parse('RH_thn'),
-    'Rata-Rata Jumlah Hari dengan Kelembapan Udara >90 % Tahunan': xls1.parse('RH_90_thn'),
-    'Rata-Rata Jumlah Hari dengan Kelembapan Udara <70 % Tahunan': xls1.parse('RH_70_thn'),
-    'Rata-Rata PH Air Hujan Tahunan': xls1.parse('ph_thn'),
-    'Suspended Particulate Matters (SPM) Tahunan': xls1.parse('SPM_thn'),
-    'Rata-Rata Jumlah Hari dengan Kecepatan Angin >25 Knot Tahunan': xls1.parse('Wind_25_thn'),
-    'Rata-Rata Lama Penyinaran Matahari (jam) Tahunan': xls1.parse('LPM_thn'),
     }
 
 # judul section 2
@@ -401,3 +401,4 @@ with col2:
     Kendali mutu tingkat III : kendali mutu ini dilakukan pada tahap pengolahan data diantaranya pengecekan homogenitas data,
     pengecekan outlier, pengecekan keterkaitan antar parameter, dll.</div>
     ''', unsafe_allow_html=True)
+
