@@ -66,13 +66,13 @@ def tampilkan_gambar(full_path, caption):
 # Konten berdasarkan submenu
 if submenu == "Lama Penyinaran Matahari Tahunan":
     file_path = os.path.join(folder_path, "LPM.png")
-    caption = "Peta Rata-Rata Lama Penyinaran Matahari Tahunan Periode 1991-2020"
+    caption = "Peta Rata-Rata Lama Penyinaran Matahari Tahunan (jam) Periode 1991-2020"
     tampilkan_gambar(file_path, caption)
 
 elif submenu == "Lama Penyinaran Matahari Bulanan":
     bulan_lpm = st.selectbox("Pilih Bulan", list(lpm_dict.keys()))
     file_path = os.path.join(folder_path, lpm_dict[bulan_lpm])
-    caption = f"Peta Rata-Rata Lama Penyinaran Matahari Bulan {bulan_lpm} Periode 1991-2020"
+    caption = f"Peta Rata-Rata Lama Penyinaran Matahari (jam) Bulan {bulan_lpm} Periode 1991-2020"
     tampilkan_gambar(file_path, caption)
 
 # Narasi/keterangan gambar
@@ -175,3 +175,4 @@ try:
         
 except Exception as e:
     st.warning(f"Gagal membuat grafik: {e}")
+
