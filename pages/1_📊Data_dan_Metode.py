@@ -97,7 +97,7 @@ xls1 = pd.ExcelFile(BytesIO(response1.content))
 # sheet
 sheets = {
     'Metadata Stasiun Meteorologi Klimatologi dan Geofisika': xls1.parse('Metadata'),
-    'Indeks Suhu Udara Tahunan': xls1.parse('Suhu_thn'),
+    'Indeks Suhu Tahunan': xls1.parse('Suhu_thn'),
     'Indeks Hujan Tahunan': xls1.parse('CH_thn'),
     'Suhu Udara Rata-Rata Bulanan': xls1.parse('Trata_bln'),
     'Suhu Udara Minimum Rata-Rata Tahunan': xls1.parse('Tmin_abs_thn'),
@@ -401,5 +401,6 @@ with col2:
     Kendali mutu tingkat III : kendali mutu ini dilakukan pada tahap pengolahan data diantaranya pengecekan homogenitas data,
     pengecekan outlier, pengecekan keterkaitan antar parameter, dll.</div>
     ''', unsafe_allow_html=True)
+
 
 
