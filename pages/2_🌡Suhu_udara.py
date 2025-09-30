@@ -128,17 +128,17 @@ elif submenu == "Suhu Minimum Absolut Harian":
 
 elif submenu == "Selisih Suhu Maksimum dengan Suhu Minimum":
     file_path = os.path.join(folder_path, "DTR.png")
-    caption = "Peta Selisih Suhu Maksimum dengan Suhu Minimum Periode 1991-2020"
+    caption = "Peta Selisih Suhu Maksimum Dengan Suhu Minimum (DTR) Periode 1991-2020"
     st.image(file_path, caption, use_container_width=True)
 
 elif submenu == "Jumlah Hari Suhu Udara Maksimum >35°C":
     file_path = os.path.join(folder_path, "Hari_Tmax_35.png")
-    caption = "Peta Jumlah Hari Suhu Udara Maksimum >35°C Periode 1991-2020"
+    caption = "Peta Rata-Rata Jumlah Hari Dengan Suhu Udara Maksimum >35°C (hari/tahun) Periode 1991-2020"
     st.image(file_path, caption, use_container_width=True)
 
 elif submenu == "Jumlah Hari Suhu Udara Minimum <15°C":
     file_path = os.path.join(folder_path, "Hari_Tmin_15.png")
-    caption = "Peta Jumlah Hari Suhu Udara Minimum <15°C Periode 1991-2020"
+    caption = "Peta Rata-Rata Jumlah Hari Dengan Suhu Udara Minimum <15°C (hari/tahun) Periode 1991-2020"
     st.image(file_path, caption, use_container_width=True)
 else:
     st.info("Peta untuk kategori ini belum tersedia di versi ini.")
@@ -287,3 +287,4 @@ try:
         
 except Exception as e:
     st.warning(f"Gagal membuat grafik: {e}")
+
