@@ -60,7 +60,7 @@ def tampilkan_gambar(full_path, caption):
 
 if submenu == "Curah Hujan Tahunan":
     file_path = os.path.join(folder_path, "RTOT.png")
-    caption = "Peta Rata-Rata Total Curah Hujan Tahunan Periode 1991-2020"
+    caption = "Peta Rata-Rata Total Curah Hujan Tahunan (mm/tahun) Periode 1991-2020"
     tampilkan_gambar(file_path, caption)
 
 elif submenu == "Curah Hujan Bulanan":
@@ -81,22 +81,22 @@ elif submenu == "Curah Hujan Bulanan":
     }
     bulan_ch = st.selectbox("Pilih Bulan", list(ch_dict.keys()))
     file_path = os.path.join(folder_path, ch_dict[bulan_ch])
-    caption = f"Peta Rata-Rata Curah Hujan Bulan {bulan_ch} Periode 1991-2020"
+    caption = f"Peta Rata-Rata Curah Hujan Bulan {bulan_ch} (mm/bulan) Periode 1991-2020"
     tampilkan_gambar(file_path, caption)
 
 elif submenu == "Curah Hujan Tahunan Tertinggi":
     file_path = os.path.join(folder_path, "RTOTMAX.png")
-    caption = "Peta Total Curah Hujan Tertinggi Periode 1991-2020"
+    caption = "Peta Total Curah Hujan Tahunan Tertinggi (mm/tahun) Periode 1991-2020"
     tampilkan_gambar(file_path, caption)
 
 elif submenu == "Curah Hujan Harian Maksimum Tahunan":
     file_path = os.path.join(folder_path, "RX1d.png")
-    caption = "Peta Rata-Rata Curah Hujan Harian Maksimum Tahunan Periode 1991-2020"
+    caption = "Peta Rata-Rata Curah Hujan Harian Maksimum Tahunan (mm/hari) Periode 1991-2020"
     tampilkan_gambar(file_path, caption)
 
 elif submenu == "Curah Hujan Harian Maksimum Absolut":
     file_path = os.path.join(folder_path, "RX1dmax.png")
-    caption = "Peta Curah Hujan Harian Maksimum Absolut Periode 1991-2020"
+    caption = "Peta Curah Hujan Harian Maksimum Absolut (Rx1day) (mm/hari) Periode 1991-2020"
     tampilkan_gambar(file_path, caption)
 
 elif submenu == "Curah Hujan Harian Maksimum Absolut Bulanan":
@@ -117,7 +117,7 @@ elif submenu == "Curah Hujan Harian Maksimum Absolut Bulanan":
     }
     bulan_abs = st.selectbox("Pilih Bulan", list(abs_dict.keys()))
     file_path = os.path.join(folder_path, abs_dict[bulan_abs])
-    caption = f"Peta Curah Hujan Harian Maksimum Absolut Bulan {bulan_abs} Periode 1991-2020"
+    caption = f"Peta Curah Hujan Harian Maksimum Absolut Bulan {bulan_abs} (mm/hari) Periode 1991-2020"
     tampilkan_gambar(file_path, caption)
 
 elif submenu == "Jumlah Hari Hujan Tahunan":
@@ -143,27 +143,27 @@ elif submenu == "Jumlah Hari Hujan Bulanan":
     }
     bulan_hh = st.selectbox("Pilih Bulan", list(hh_dict.keys()))
     file_path = os.path.join(folder_path, hh_dict[bulan_hh])
-    caption = f"Peta Rata-Rata Jumlah Hari Hujan Bulan {bulan_hh} Periode 1991–2020"
+    caption = f"Peta Rata-Rata Jumlah Hari Hujan Bulan {bulan_hh} (hari/bulan) Periode 1991–2020"
     tampilkan_gambar(file_path, caption)
 
 elif submenu == "Jumlah Hari Hujan dengan Curah Hujan >50 mm/hari Tahunan":
     file_path = os.path.join(folder_path, "R50.png")
-    caption = "Peta Rata-Rata Jumlah Hari Hujan >50 mm/hari Tahunan Periode 1991-2020"
+    caption = "Peta Rata-Rata Jumlah Hari Hujan dengan Curah Hujan >50 mm/hari Tahunan Periode 1991-2020"
     tampilkan_gambar(file_path, caption)
 
 elif submenu == "Jumlah Hari Hujan dengan Curah Hujan >100 mm/hari":
     file_path = os.path.join(folder_path, "R100max.png")
-    caption = "Peta Rata-Rata Jumlah Hari Hujan >100 mm/hari Tahunan Periode 1991-2020"
+    caption = "Peta Rata-Rata Jumlah Hari Hujan dengan Curah Hujan >100 mm/hari Tahunan Periode 1991-2020"
     tampilkan_gambar(file_path, caption)
 
 elif submenu == "Jumlah Hari Tanpa Hujan Berurutan Terpanjang":
     file_path = os.path.join(folder_path, "CDDmax.png")
-    caption = "Peta Rata-Rata Jumlah Hari Tanpa Hujan Berurutan Periode 1991-2020"
+    caption = "Peta Jumlah Hari Tanpa Hujan Berurutan Terpanjang (Consecutive Dry Days) Periode 1991-2020"
     tampilkan_gambar(file_path, caption)
 
 elif submenu == "Jumlah Hari Hujan Berurutan Terpanjang":
     file_path = os.path.join(folder_path, "CWDmax.png")
-    caption = "Peta Rata-Rata Jumlah Hari Hujan Berurutan Terpanjang Periode 1991-2020"
+    caption = "Peta Jumlah Hari Hujan Berurutan Terpanjang (Consecutive Wet Days) Periode 1991-2020"
     tampilkan_gambar(file_path, caption)
 
 # Narasi/keterangan gambar
