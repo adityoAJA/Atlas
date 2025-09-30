@@ -79,12 +79,12 @@ elif submenu == "Kelembaban Udara Rata-Rata Tahunan":
 
 elif submenu == "Jumlah Hari Kelembaban Udara <70 %":
     file_path = os.path.join(folder_path, "RH_70.png")
-    caption = "Peta Rata-Rata Jumlah Hari Kelembaban Udara <70 % Tahunan Periode 1991-2020"
+    caption = "Peta Rata-Rata Jumlah Hari Kelembaban Udara <70 % (hari/tahun) Periode 1991-2020"
     tampilkan_gambar(file_path, caption)
 
 elif submenu == "Jumlah Hari Kelembaban Udara >90 %":
     file_path = os.path.join(folder_path, "RH_90.png")
-    caption = "Peta Rata-Rata Jumlah Hari Kelembaban Udara >90 % Tahunan Periode 1991-2020"
+    caption = "Peta Rata-Rata Jumlah Hari Kelembaban Udara >90 % (hari/tahun) Periode 1991-2020"
     tampilkan_gambar(file_path, caption)
 
 # Narasi/keterangan gambar
@@ -197,3 +197,4 @@ try:
         
 except Exception as e:
     st.warning(f"Gagal membuat grafik: {e}")
+
