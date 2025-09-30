@@ -97,7 +97,7 @@ elif submenu == "Curah Hujan Harian Maksimum Tahunan":
 elif submenu == "Curah Hujan Harian Maksimum Absolut":
     file_path = os.path.join(folder_path, "RX1dmax.png")
     caption = "Peta Rata-Rata Curah Hujan Harian Maksimum Absolut Periode 1991-2020"
-    tampilkan_gambar(file_path, )
+    tampilkan_gambar(file_path, caption)
 
 elif submenu == "Curah Hujan Harian Maksimum Absolut Bulanan":
     # Dictionary bulan dan path peta
