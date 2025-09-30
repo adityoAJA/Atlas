@@ -67,12 +67,12 @@ angin_dict = {
 # Konten berdasarkan submenu
 if submenu == "Kecepatan Angin Tertinggi":
     file_path = os.path.join(folder_path, "Wind_max.png")
-    caption = "Peta Kecepatan Angin Tertinggi Tahunan Periode 1991-2020"
+    caption = "Peta Kecepatan Angin Tertinggi (Knots) Periode 1991-2020"
     tampilkan_gambar(file_path, caption)
 
 elif submenu == "Hari dengan Kecepataan Angin >25 Knots Tahunan":
     file_path = os.path.join(folder_path, "Wind_25.png")
-    caption = "Peta Jumlah Hari dengan Kecepataan Angin >25 Knots Tahunan Periode 1991-2020"
+    caption = "Peta Rata-Rata Jumlah Hari dengan Kecepataan Angin >25 Knots Tahunan Periode 1991-2020"
     tampilkan_gambar(file_path, caption)
 
 elif submenu == "Hari dengan Kecepataan Angin >25 Knots Bulanan":
@@ -183,3 +183,4 @@ try:
         
 except Exception as e:
     st.warning(f"Gagal membuat grafik: {e}")
+
