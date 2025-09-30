@@ -97,7 +97,8 @@ xls1 = pd.ExcelFile(BytesIO(response1.content))
 # sheet
 sheets = {
     'Metadata Stasiun Meteorologi Klimatologi dan Geofisika': xls1.parse('Metadata'),
-    'Suhu Udara Rata-Rata Tahunan': xls1.parse('Suhu_thn'),
+    'Indeks Suhu Udara Tahunan': xls1.parse('Suhu_thn'),
+    'Indeks Hujan Tahunan': xls1.parse('CH_thn'),
     'Suhu Udara Rata-Rata Bulanan': xls1.parse('Trata_bln'),
     'Suhu Udara Minimum Rata-Rata Tahunan': xls1.parse('Tmin_abs_thn'),
     'Suhu Udara Minimum Rata-Rata Bulanan': xls1.parse('Tmin_bln'),
@@ -108,7 +109,6 @@ sheets = {
     'Rata-Rata Jumlah Hari dengan Kelembapan Udara >90 % Tahunan': xls1.parse('RH_90_thn'),
     'Rata-Rata Jumlah Hari dengan Kelembapan Udara <70 % Tahunan': xls1.parse('RH_70_thn'),
     'Rata-Rata Total Curah Hujan Bulanan': xls1.parse('CH_bln'),
-    'Rata-Rata Total Curah Hujan Tahunan': xls1.parse('CH_thn'),
     'Curah Hujan Harian Maksimum Absolut Bulanan': xls1.parse('RX1day_bln'),
     'Rata-Rata Jumlah Hari Hujan Bulanan': xls1.parse('HH_bln'),
     'Kecepatan Angin Tertinggi dan Rata-Rata Jumlah Hari dengan Kecepatan Angin >25 Knot Tahunan': xls1.parse('Wind_25_thn'),
@@ -401,4 +401,5 @@ with col2:
     Kendali mutu tingkat III : kendali mutu ini dilakukan pada tahap pengolahan data diantaranya pengecekan homogenitas data,
     pengecekan outlier, pengecekan keterkaitan antar parameter, dll.</div>
     ''', unsafe_allow_html=True)
+
 
