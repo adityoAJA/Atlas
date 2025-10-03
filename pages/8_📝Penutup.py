@@ -20,7 +20,7 @@ st.title('Penutup')
 st.divider()
 
 # judul section
-st.header('Kesimpulan')
+st.header('Summary')
 
 # narasi utama
 st.markdown('''
@@ -73,3 +73,4 @@ with col2:
                 Schaduangrat N, Lampa S, Simeon S, Gleeson MP, Spjuth O, Nantasenamat C.
                 Towards reproducible computational drug discovery. J Cheminform. 2020;12(1):9. 
                 ''')
+
