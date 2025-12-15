@@ -15,7 +15,7 @@ with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 # judul section
-st.title('Penutup')
+st.title('Rangkuman')
 
 st.divider()
 
@@ -73,4 +73,3 @@ with col2:
                 Schaduangrat N, Lampa S, Simeon S, Gleeson MP, Spjuth O, Nantasenamat C.
                 Towards reproducible computational drug discovery. J Cheminform. 2020;12(1):9. 
                 ''')
-
